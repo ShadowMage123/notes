@@ -51,7 +51,7 @@
 	#mystyle{
 		text-align:center;
 		margin-left:300px;
-		margin-top:-200;
+		margin-top:200;
 	}
 	#twitterbacon{
 		margin-top:10px;
@@ -61,24 +61,14 @@
 		font-family:arial;
 		font-weight:bold;
 		margin-top:325px;
-	}#check{
+	}#mystyle{
+		font-family:arial;
+		margin-top:200px;
+		color:navy;
 		text-align:center;
-		font-family:Arial;
-		color:navy;
+	}#question2{
+	font-family:arial;
 		margin-top:200px;
-	}#check1{
-		text-align:center;
-		font-family:Arial;
 		color:navy;
-		margin-top:200px;
-	}#check2{
-                text-align:center;
-		font-family:Arial;
-		color:navy;
-		margin-top:200px;
-	}#check3{
-		text-align:center;
-		font-family:Arial;
-		color:navy;
-		margin-top:200px;
+		text-align:center;	
 	}
