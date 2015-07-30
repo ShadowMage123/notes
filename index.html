@@ -95,6 +95,8 @@ function finalsubmit(left_total, right_total)
     {// code for IE6, IE5
         xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
     }
+    
+    /*
     xmlhttp.onreadystatechange=function()
     {
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
@@ -102,6 +104,7 @@ function finalsubmit(left_total, right_total)
             document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
         }
     }
+    */
     var submit_url = "https://docs.google.com/forms/d/1ybRxxAgIwIOhx1y3QdeA8n1jcKuro6JzaZmcHIqrYyE/formResponse?entry.1797735792="+ left_total +"&entry.72936493="+right_total
     xmlhttp.open("GET",submit_url,false);
     xmlhttp.send();
