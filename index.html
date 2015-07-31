@@ -54,7 +54,7 @@ display:auto
 
     </div>
 </form> 
-
+<p id="endscore"></p>
 <button onclick="myFunction()">Take the Test!</button>
 <div id ="credits">Made By TheHumanOcelot, TheEpicBlueberryPuffin, Bronze Boys and ShadowMage</div>
 <script>
@@ -65,7 +65,7 @@ document.getElementById("mystyle").className = "hideMe";
 function myFunction() {
     document.getElementById("mystyle").className = "showMe";
     
-}
+}document.getElementById('endscore').className = "hideMe";
 
 var question_value;
 function submitFunction() {
@@ -99,7 +99,10 @@ function finalsubmit(left_total, right_total)
     var submit_url = "https://docs.google.com/forms/d/1ybRxxAgIwIOhx1y3QdeA8n1jcKuro6JzaZmcHIqrYyE/formResponse?entry.1797735792="+ left_total +"&entry.72936493="+right_total
     xmlhttp.open("GET",submit_url,false);
     xmlhttp.send();
+ document.getElementById('endscore').className = "showMe";
+ document.getElementById('endscore').innerHTML = "Your scores:" + left + right;
 }
+
 </script>
 
 
