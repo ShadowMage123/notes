@@ -47,9 +47,9 @@ display:auto
 </div>
 
     <div id="question2" class="hideMe">
-        <p>When looking at an app you want to buy do you look at the reviews?</p>
-        <input type="radio" id ="check2" name="blah1" value="left" checked>Yes<br>
-        <input type="radio" id="check3" name="blah1" value="nothing">No<br/>
+        <p>When making something in a group do you suggest ideas or sit back and listen?</p>
+        <input type="radio" id ="check2" name="blah1" value="right" checked>Suggest ideas<br>
+        <input type="radio" id="check3" name="blah1" value="nothing">Sit back and listen<br/>
         <button onclick="submit2Function()">Submit</button>
 
     </div>
@@ -77,7 +77,7 @@ function submitFunction() {
 	function submit2Function() {
         document.getElementById('question2').className = "hideMe";
         if (document.getElementById('check2').checked) {
-			left = left + 1;
+			right = right + 1;
 
 		}
 		finalsubmit(left,right)
