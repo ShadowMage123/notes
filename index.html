@@ -95,7 +95,7 @@ function finalsubmit(left_total, right_total)
         xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
     }
 document.getElementById('endscore').className = "showMe";
- document.getElementById('endscore').innerHTML = "Your scores - left: " + left + " right: " right;
+ document.getElementById('endscore').innerHTML = "Your scores - left: " + left + " right: " + right;
     var submit_url = "https://docs.google.com/forms/d/1ybRxxAgIwIOhx1y3QdeA8n1jcKuro6JzaZmcHIqrYyE/formResponse?entry.1797735792="+ left_total +"&entry.72936493="+right_total
     xmlhttp.open("GET",submit_url,false);
     xmlhttp.send();
